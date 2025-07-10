@@ -1,0 +1,25 @@
+{
+  "name": "@openclint/docusaurus-theme-openclint",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clear": "rimraf lib tsconfig.tsbuildinfo",
+    "prebuild": "npx typed-css-modules src/theme --outDir src/theme --include \"*.module.css\"",
+    "build": "tsc && copyfiles -u 2 'src/theme/**/*.{css,d.ts}' lib/theme"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.12",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^6.0.1",
+    "typed-css-modules": "^0.9.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@types/react": "^19.1.8",
+    "clsx": "^2.1.1",
+    "react": "^19.1.0",
+    "react-github-btn": "^1.4.0"
+  }
+}

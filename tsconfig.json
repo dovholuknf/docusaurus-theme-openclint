@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "outDir": "lib",
+    "rootDir": "src",
+    "paths": {
+      "@theme/*": ["src/theme/*"]
+    },
+    "types": ["react", "node"],
+    "typeRoots": ["stub-types", "node_modules/@types"],
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "composite": true
+  },
+  "include": ["src"]
+}
